@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · Primmo</title>
+<meta name="description" content="Primmo uygulamasının gizlilik politikası ve KVKK aydınlatma metni. English House by Selin.">
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  --ink: #1A1A2E;
+  --text: #374151;
+  --muted: #6B7280;
+  --line: #E3E9F2;
+  --bg: #F3F7FC;
+  --card: #FFFFFF;
+  --soft: #EEF5FE;
+  --blue: #1E6FD9;
+  --cyan: #22B8E0;
+  --pink: #E2407E;
+  --orange: #F5A623;
+  --mark: #FFF3C4;
+  --mark-ink: #7A5200;
+  --shadow: 0 8px 28px rgba(30, 111, 217, 0.08);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #F1F4F9;
+    --text: #C9D1DD;
+    --muted: #94A0B2;
+    --line: #273142;
+    --bg: #0F141C;
+    --card: #171E29;
+    --soft: #1B2A40;
+    --blue: #5AA2FF;
+    --mark: #3D3212;
+    --mark-ink: #FFD978;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--blue); text-underline-offset: 3px; }
+strong { color: var(--ink); }
+
+/* ---------- üst kısım */
+.bar { height: 6px; background: linear-gradient(90deg, var(--cyan), var(--blue) 45%, var(--pink) 80%, var(--orange)); }
+header.top {
+  max-width: 1080px; margin: 0 auto; padding: 28px 20px 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+header.top img { display: block; height: 44px; width: auto; }
+header.top .brand-text { font-weight: 800; color: var(--ink); text-decoration: none; font-size: 18px; }
+header.top nav a { font-size: 14px; font-weight: 600; text-decoration: none; }
+
+.hero { max-width: 1080px; margin: 0 auto; padding: 40px 20px 28px; }
+.eyebrow { margin: 0 0 10px; font-size: 12px; font-weight: 800; letter-spacing: 1.6px; color: var(--blue); }
+.hero h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; color: var(--ink); letter-spacing: -0.5px; }
+.hero p.lead { margin: 0; max-width: 680px; font-size: 18px; color: var(--text); }
+.meta { margin-top: 16px; font-size: 14px; color: var(--muted); }
+
+/* ---------- özet kartları */
+.summary {
+  max-width: 1080px; margin: 0 auto; padding: 0 20px 8px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 14px;
+}
+.chip {
+  background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+  padding: 18px 18px 16px; box-shadow: var(--shadow);
+}
+.chip .ic {
+  width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
+  background: var(--soft); color: var(--blue); margin-bottom: 10px;
+}
+.chip .ic svg { width: 20px; height: 20px; }
+.chip h3 { margin: 0 0 4px; font-size: 15px; color: var(--ink); }
+.chip p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--muted); }
+
+/* ---------- gövde */
+.layout {
+  max-width: 1080px; margin: 0 auto; padding: 32px 20px 64px;
+  display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 36px; align-items: start;
+}
+.toc { position: sticky; top: 20px; font-size: 14px; }
+.toc p { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: 1.4px; color: var(--muted); }
+.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: t; }
+.toc li { counter-increment: t; }
+.toc a {
+  display: flex; gap: 8px; padding: 6px 10px; border-radius: 10px;
+  color: var(--text); text-decoration: none; line-height: 1.4;
+}
+.toc a::before { content: counter(t) "."; color: var(--muted); min-width: 20px; }
+.toc a:hover { background: var(--card); color: var(--blue); }
+
+article {
+  background: var(--card); border: 1px solid var(--line); border-radius: 22px;
+  padding: 8px 40px 40px; box-shadow: var(--shadow); min-width: 0;
+}
+section { padding-top: 32px; scroll-margin-top: 16px; }
+section + section { border-top: 1px solid var(--line); margin-top: 32px; }
+h2 { margin: 0 0 14px; font-size: 22px; line-height: 1.3; color: var(--ink); display: flex; gap: 12px; align-items: baseline; }
+h2 .n {
+  flex: none; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px;
+  background: var(--soft); color: var(--blue); font-size: 14px; font-weight: 800; transform: translateY(-2px);
+}
+h3 { margin: 24px 0 8px; font-size: 16px; color: var(--ink); }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin: 5px 0; }
+li::marker { color: var(--blue); }
+
+.table-wrap { overflow-x: auto; margin: 8px 0 16px; border: 1px solid var(--line); border-radius: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; line-height: 1.55; }
+th, td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { background: var(--soft); color: var(--ink); font-size: 13px; font-weight: 700; white-space: nowrap; }
+td:first-child { font-weight: 600; color: var(--ink); min-width: 140px; }
+
+.note {
+  margin: 14px 0; padding: 14px 16px; border-radius: 14px; background: var(--soft);
+  border-left: 4px solid var(--blue); font-size: 15px;
+}
+.note p:last-child { margin: 0; }
+.note.warm { border-left-color: var(--orange); }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px; margin: 10px 0 14px; }
+.mini { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+.mini strong { display: block; margin-bottom: 2px; }
+.mini span { font-size: 14px; color: var(--muted); line-height: 1.5; display: block; }
+
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps li { counter-increment: s; position: relative; padding-left: 40px; margin: 10px 0; }
+.steps li::before {
+  content: counter(s); position: absolute; left: 0; top: 1px; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--blue); color: #fff; font-size: 13px; font-weight: 800; display: grid; place-items: center;
+}
+
+dl.contact { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 8px 0 12px; }
+dl.contact dt { color: var(--muted); font-size: 14px; }
+dl.contact dd { margin: 0; color: var(--ink); font-weight: 600; overflow-wrap: anywhere; }
+
+/* Yayından önce doldurulacak alanlar: göze batsın diye sarı. */
+mark.fill { background: var(--mark); color: var(--mark-ink); padding: 1px 6px; border-radius: 6px; font-weight: 700; }
+
+footer { max-width: 1080px; margin: 0 auto; padding: 0 20px 48px; font-size: 13px; color: var(--muted); text-align: center; }
+footer a { color: var(--muted); }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 20px; padding-top: 24px; }
+  .toc { position: static; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+  .toc ol { columns: 2; column-gap: 12px; }
+  .toc a { padding: 4px 6px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 15.5px; }
+  header.top { padding: 20px 16px 0; }
+  header.top img { height: 36px; }
+  .hero { padding: 28px 16px 22px; }
+  .hero p.lead { font-size: 16.5px; }
+  .summary, .layout, footer { padding-left: 16px; padding-right: 16px; }
+  .toc ol { columns: 1; }
+  article { padding: 4px 18px 28px; border-radius: 18px; }
+  h2 { font-size: 19px; }
+  dl.contact { grid-template-columns: 1fr; gap: 0; }
+  dl.contact dd { margin-bottom: 8px; }
+  .table-wrap { border: 0; overflow: visible; }
+  table, tbody, tr, td { display: block; width: auto; }
+  tr:first-child { display: none; }
+  tr { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; }
+  td { border: 0; padding: 2px 0; }
+  td:first-child { min-width: 0; margin-bottom: 4px; }
+  .t-legal td:nth-child(2)::before { content: "Hukuki sebep: "; font-weight: 700; color: var(--ink); }
+  .t-proc td:nth-child(3) { color: var(--muted); font-size: 13.5px; margin-top: 4px; }
+  .t-proc td:nth-child(3)::before { content: "Konum: "; font-weight: 700; }
+}
+@media print {
+  .bar, .toc, header.top nav { display: none; }
+  body { background: #fff; }
+  .layout { display: block; padding: 0; }
+  article, .chip { box-shadow: none; border: 0; padding: 0; }
+  mark.fill { background: none; color: inherit; }
+}
+</style>
+</head>
+<body>
+<div class="bar" aria-hidden="true"></div>
+
+<header class="top">
+  <a href="https://englishhousebyselin.com" aria-label="English House by Selin ana sayfa">
+    <img src="https://englishhousebyselin.com/app-1509/images/english-house-logo.png" alt="English House by Selin"
+         onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-text',textContent:'English House by Selin'}))">
+  </a>
+  <nav><a href="https://englishhousebyselin.com">Ana sayfa</a></nav>
+</header>
+
+<div class="hero">
+  <p class="eyebrow">PRIMMO</p>
+  <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+  <p class="lead">Primmo'yu kullanırken hangi bilgilerini neden işlediğimizi, kimlerle paylaştığımızı ve bu bilgiler üzerindeki haklarını burada sade bir dille anlatıyoruz.</p>
+  <p class="meta">Son güncelleme: 24 Kasım 2026</p>
+</div>
+
+<div class="summary" aria-label="Kısa özet">
+  <div class="chip">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <h3>Reklam ve takip yok</h3>
+    <p>Uygulamada reklam yok. Bilgilerini satmıyoruz, seni başka uygulamalarda izlemiyoruz.</p>
+  </div>
+  <div class="chip">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M8 7h8M8 11h6"/></svg></div>
+    <h3>Yalnızca öğrenmen için</h3>
+    <p>Topladığımız bilgiler ilerlemeni kaydetmek ve öğretmeninle çalışmanı sağlamak için kullanılır.</p>
+  </div>
+  <div class="chip">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+    <h3>Kontrol sende</h3>
+    <p>Ligde görünmeyi ve kullanım verisi paylaşmayı uygulamadan kapatabilirsin.</p>
+  </div>
+  <div class="chip">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></div>
+    <h3>Tek dokunuşla silme</h3>
+    <p>Hesabını ve buluttaki bütün verilerini uygulamanın içinden kalıcı olarak silebilirsin.</p>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="toc" aria-label="İçindekiler">
+    <p>İÇİNDEKİLER</p>
+    <ol>
+      <li><a href="#sorumlu">Biz kimiz</a></li>
+      <li><a href="#veriler">Hangi bilgileri işliyoruz</a></li>
+      <li><a href="#toplamadiklarimiz">Neleri toplamıyoruz</a></li>
+      <li><a href="#amac">Amaçlar ve hukuki sebepler</a></li>
+      <li><a href="#paylasim">Kimlerle paylaşıyoruz</a></li>
+      <li><a href="#yurtdisi">Yurt dışına aktarım</a></li>
+      <li><a href="#sure">Ne kadar saklıyoruz</a></li>
+      <li><a href="#silme">Hesabını silmek</a></li>
+      <li><a href="#izinler">Telefon izinleri</a></li>
+      <li><a href="#guvenlik">Güvenlik</a></li>
+      <li><a href="#cocuklar">Çocuklar</a></li>
+      <li><a href="#haklar">KVKK kapsamındaki hakların</a></li>
+      <li><a href="#degisiklik">Değişiklikler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section id="sorumlu">
+      <h2><span class="n">1</span>Biz kimiz</h2>
+      <p>Primmo, <strong>English House by Selin</strong> tarafından sunulan bir İngilizce öğrenme uygulamasıdır. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında kişisel verilerinin <strong>veri sorumlusu</strong> aşağıdaki işletmedir:</p>
+      <dl class="contact">
+        <dt>Unvan</dt><dd>Selin Menevşe Kaynarpınar (English House by Selin), şahıs işletmesi</dd>
+        <dt>Adres</dt><dd>Zübeyde Hanım Caddesi No: 254 D: 11, Zeytinburnu / İstanbul</dd>
+        <dt>Vergi dairesi / no</dt><dd>Zeytinburnu Vergi Dairesi, 5400556081</dd>
+        <dt>E-posta</dt><dd><a href="mailto:iletisim@englishhousebyselin.com">iletisim@englishhousebyselin.com</a></dd>
+      </dl>
+      <p>Bu metin hem gizlilik politikamız hem de KVKK'nın 10. maddesi uyarınca hazırlanan aydınlatma metnimizdir. Primmo uygulamasının (iOS ve Android) bütün sürümleri için geçerlidir.</p>
+    </section>
+
+    <section id="veriler">
+      <h2><span class="n">2</span>Hangi bilgileri işliyoruz</h2>
+      <p>Bilgilerin, uygulamayı kullanırken doğrudan senden ya da uygulamanın çalışması sırasında otomatik olarak, elektronik ortamda toplanır.</p>
+
+      <h3>Hesap bilgileri</h3>
+      <div class="table-wrap"><table>
+        <tr><th>Bilgi</th><th>Ne zaman</th></tr>
+        <tr><td>Ad ve e-posta adresi</td><td>E-postayla, Apple ile ya da Google ile kayıt olduğunda. Apple ile girişte e-postanı gizlemeyi seçersen Apple'ın verdiği yönlendirme adresini alırız.</td></tr>
+        <tr><td>Şifre</td><td>E-postayla kayıt olduğunda. Şifren açık hâliyle saklanmaz; geri çevrilemeyen bir biçimde (hash) tutulur. Biz de göremeyiz.</td></tr>
+        <tr><td>Giriş bağlantısı</td><td>Apple ile giriş yaptıysan, hesabını silerken Apple'daki bağlantıyı iptal edebilmemiz için Apple'ın verdiği bir anahtar saklanır.</td></tr>
+        <tr><td>Misafir hesabı</td><td>Kayıt olmadan "misafir" olarak başlarsan ad ve e-posta almadan rastgele bir hesap kimliği oluşturulur.</td></tr>
+      </table></div>
+
+      <h3>Öğrenme bilgileri</h3>
+      <ul>
+        <li>Seviye testi sonucun, hedef seviyen, ders ilerlemen, öğrendiğin ve tekrar edeceğin kelimeler, yanlış yaptığın ifadeler.</li>
+        <li>Puanların (XP), çalışma serin ve son çalışma tarihin.</li>
+      </ul>
+      <p>Bu bilgiler cihazında tutulur. Hesap açtıysan telefon değiştirdiğinde kaybolmasın diye buluta da yedeklenir.</p>
+
+      <h3>Öğretmenine bağlandığında</h3>
+      <p>Öğretmeninin verdiği sınıf koduyla ona bağlanırsan, öğretmenin seninle çalışabilmek için şunları görür:</p>
+      <ul>
+        <li>Adın, seviyen, genel ilerlemen ve çalışma düzenin (seri, son çalışma, puan).</li>
+        <li>Sana verilen ödevler ve ödev durumun.</li>
+        <li>Gönderdiğin yazma ödevlerinin metni ve konuşma ödevlerinin ses kaydı.</li>
+        <li>Seviye testindeki konuşma bölümünü bağlıyken yaparsan oradaki cevapların ve ses kaydın.</li>
+      </ul>
+      <p>Öğretmeninin yazdığı geri bildirim ve puan da hesabına kaydedilir. Öğretmenin yalnızca kendisine bağlı öğrencilerin bilgilerini görebilir.</p>
+
+      <h3>Ses kayıtları</h3>
+      <ul>
+        <li><strong>Ödev ve seviye testi kayıtları:</strong> yalnızca öğretmenine bağlıysan ve kaydı kendin gönderdiğinde buluta yüklenir. Bu kayıtlara yalnızca sen ve öğretmenin erişebilirsin.</li>
+        <li><strong>Telaffuz alıştırmaları:</strong> söylediğin, telefonunun konuşma tanıma özelliğiyle yazıya çevrilir. Bu işlem telefonunda ya da telefonunun üreticisinin (Apple veya Google) konuşma tanıma hizmetinde yapılabilir. Bu alıştırmalardaki sesin bize gönderilmez ve tarafımızca saklanmaz.</li>
+      </ul>
+
+      <h3>Yalnızca cihazında kalanlar</h3>
+      <p>Yazma bölümünde kendi kendine yazdığın metinler ve taslaklar yalnızca telefonunda saklanır, buluta gönderilmez. Sesli okuma ve günlük hatırlatıcılar da telefonunda çalışır.</p>
+
+      <h3>Lig ve arkadaşlar</h3>
+      <ul>
+        <li><strong>Lig sıralaması:</strong> ligde görünmeyi açık tutarsan adının kısaltılmış hâli (örneğin "Ayşe K.") ve puanın diğer kullanıcılara görünür. Ben sekmesinden kapatabilirsin; kapattığında sıralamadaki kaydın silinir.</li>
+        <li><strong>Arkadaş kodu, düello ve canlı yarış:</strong> arkadaş kodunu paylaştığın kişiler adını görebilir. Düello ve yarışlarda skorun rakibinle paylaşılır. Arkadaş kodları herkese açık bir listede yayımlanmaz.</li>
+      </ul>
+
+      <h3>Bildirimler</h3>
+      <ul>
+        <li>Ödev, hatırlatma ve öğretmen mesajları gibi uygulama içi bildirimlerin hesabında saklanır.</li>
+        <li>Telefonuna bildirim gönderilmesine izin verirsen, bildirimin doğru cihaza ulaşması için telefonuna özel bir bildirim kimliği (anahtar) kaydedilir. Çıkış yaptığında bu kimlik silinir.</li>
+      </ul>
+
+      <h3>Görüş bildirimleri</h3>
+      <p>"Görüş bildir" formuyla gönderdiğin mesaj, kategori, uygulama sürümü ve telefon türü (iOS/Android) kaydedilir. Bu kayıt hesabınla ilişkilendirilmez. Sana dönmemizi istersen yazdığın iletişim bilgisini de alırız.</p>
+
+      <h3>Teknik bilgiler</h3>
+      <ul>
+        <li><strong>Hata raporları:</strong> uygulama bir hatayla karşılaşırsa hata metni, teknik hata izi, uygulama sürümü ve telefon türü gönderilir. Bu raporlara ad, e-posta veya hesap kimliği eklenmez; hata metninde e-posta adresi geçerse silinir.</li>
+        <li><strong>Kullanım istatistikleri:</strong> hangi bölümlerin ne kadar kullanıldığını anlamak için olay adı (örneğin "ders bitti"), birkaç sayısal bilgi, uygulama sürümü, telefon türü, rastgele bir oturum kimliği ve giriş yaptıysan hesap kimliğin kaydedilir. Yazdıkların, cevapların ve kelimelerin gönderilmez. <strong>Ben &rsaquo; Kullanım verisi paylaş</strong> ayarından kapatabilirsin.</li>
+        <li><strong>Bağlantı kayıtları:</strong> sunucu altyapımız güvenlik ve işletim amacıyla IP adresi ve istek zamanı gibi bağlantı kayıtlarını kısa süreli tutar.</li>
+      </ul>
+
+      <h3>Primmo Plus ve ödemeler</h3>
+      <p>Primmo Plus abonelikleri tamamen Apple App Store veya Google Play üzerinden yapılır. Kart ve ödeme bilgilerin bize hiçbir zaman ulaşmaz. Uygulama yalnızca aboneliğinin etkin olup olmadığını mağazadan öğrenir. English House öğrencisiysen ve sınıf koduyla öğretmenine bağlandıysan, Primmo Plus ödeme alınmadan açılır; bunun için ayrıca bir bilgi toplanmaz, yalnızca öğretmenine bağlı olup olmadığın kontrol edilir.</p>
+    </section>
+
+    <section id="toplamadiklarimiz">
+      <h2><span class="n">3</span>Neleri toplamıyoruz</h2>
+      <div class="card-grid">
+        <div class="mini"><strong>Konum</strong><span>Konum bilgine erişmiyoruz.</span></div>
+        <div class="mini"><strong>Rehber, fotoğraflar</strong><span>Kişilerine, fotoğraflarına ya da dosyalarına erişmiyoruz.</span></div>
+        <div class="mini"><strong>Reklam kimliği</strong><span>Reklam kimliği toplamıyor, reklam göstermiyoruz.</span></div>
+        <div class="mini"><strong>Uygulamalar arası takip</strong><span>Seni başka uygulama ve sitelerde izlemiyor, veri aracılarıyla paylaşmıyoruz.</span></div>
+      </div>
+      <p>Kişisel verilerini <strong>satmıyor ve kiralamıyoruz</strong>.</p>
+    </section>
+
+    <section id="amac">
+      <h2><span class="n">4</span>Amaçlar ve hukuki sebepler</h2>
+      <div class="table-wrap"><table class="t-legal">
+        <tr><th>Amaç</th><th>Hukuki sebep (KVKK m. 5/2)</th></tr>
+        <tr><td>Hesabını oluşturmak, giriş yapmanı ve ilerlemeni kaydetmek</td><td>Sözleşmenin kurulması ve ifası (c)</td></tr>
+        <tr><td>Öğretmeninle çalışmanı sağlamak: ödev, geri bildirim, ses kaydı paylaşımı</td><td>Sözleşmenin kurulması ve ifası (c)</td></tr>
+        <tr><td>Bildirim ve hatırlatma göndermek</td><td>Sözleşmenin ifası (c); telefona bildirim için ayrıca telefonundaki izin</td></tr>
+        <tr><td>Lig, arkadaş ve düello özellikleri</td><td>Sözleşmenin ifası (c); ligde görünmeyi istediğin zaman kapatabilirsin</td></tr>
+        <tr><td>Hataları bulmak, uygulamayı geliştirmek ve güvenliği sağlamak</td><td>Meşru menfaat (f); kullanım istatistiklerini kapatabilirsin</td></tr>
+        <tr><td>Görüş ve taleplerine cevap vermek</td><td>Sözleşmenin ifası (c) ve meşru menfaat (f)</td></tr>
+        <tr><td>Yasal yükümlülükleri yerine getirmek ve yetkili kurumların taleplerini karşılamak</td><td>Kanunlarda açıkça öngörülmesi (a) ve hukuki yükümlülük (ç)</td></tr>
+      </table></div>
+    </section>
+
+    <section id="paylasim">
+      <h2><span class="n">5</span>Kimlerle paylaşıyoruz</h2>
+      <p>Bilgilerini yalnızca aşağıdaki durumlarda ve gerektiği kadar paylaşırız:</p>
+      <ul>
+        <li><strong>Öğretmenin:</strong> yalnızca sınıf koduyla ona bağlandıysan, 2. bölümde anlatılan bilgiler.</li>
+        <li><strong>Diğer kullanıcılar:</strong> ligde görünmeyi açtıysan kısaltılmış adın ve puanın; arkadaşlarınla adın ve düello skorların.</li>
+        <li><strong>Hizmet sağlayıcılarımız:</strong> uygulamanın çalışması için bizim adımıza veri işleyen ve verini başka amaçla kullanamayan firmalar.</li>
+        <li><strong>Yetkili kurum ve kuruluşlar:</strong> yalnızca kanunen zorunlu olduğunda.</li>
+      </ul>
+      <div class="table-wrap"><table class="t-proc">
+        <tr><th>Hizmet sağlayıcı</th><th>Ne için</th><th>Konum</th></tr>
+        <tr><td>Supabase</td><td>Veritabanı, hesap ve giriş altyapısı, ses kayıtlarının saklanması, doğrulama kodu ve şifre sıfırlama e-postalarının gönderilmesi</td><td>Almanya (Frankfurt, AB)</td></tr>
+        <tr><td>Google Firebase Cloud Messaging</td><td>Telefona bildirimlerin iletilmesi</td><td>ABD ve diğer ülkeler</td></tr>
+        <tr><td>Apple ve Google</td><td>Apple / Google ile giriş, uygulama içi satın alma, bildirim iletimi, cihazdaki konuşma tanıma</td><td>ABD ve diğer ülkeler</td></tr>
+      </table></div>
+      <p>Apple ve Google ile giriş yaptığında ya da satın alma yaptığında bu firmalar bilgilerini kendi gizlilik politikalarına göre de işler.</p>
+    </section>
+
+    <section id="yurtdisi">
+      <h2><span class="n">6</span>Yurt dışına aktarım</h2>
+      <p>Uygulamanın altyapısı Türkiye dışında bulunduğu için kişisel verilerin yukarıdaki hizmet sağlayıcılara, başta Almanya (Avrupa Birliği) ve Amerika Birleşik Devletleri olmak üzere yurt dışına aktarılır. Bu aktarımlar KVKK'nın 9. maddesinde ve ilgili mevzuatta öngörülen usul ve güvencelere (örneğin Kişisel Verileri Koruma Kurulu'nun ilan ettiği standart sözleşmeler) uygun olarak yapılır.</p>
+    </section>
+
+    <section id="sure">
+      <h2><span class="n">7</span>Ne kadar saklıyoruz</h2>
+      <ul>
+        <li><strong>Hesap, öğrenme bilgileri, ödevler ve ses kayıtları:</strong> hesabın açık olduğu sürece. Hesabını sildiğinde kalıcı olarak silinir.</li>
+        <li><strong>Kullanım istatistikleri:</strong> hesabını sildiğinde hesabına bağlı olanlar da silinir.</li>
+        <li><strong>Hata raporları ve görüş bildirimleri:</strong> hesabınla ilişkilendirilmedikleri için uygulamayı iyileştirmek amacıyla gerektiği sürece tutulur. Bir görüş bildiriminin silinmesini istersen bize yazabilirsin.</li>
+        <li><strong>Bağlantı kayıtları:</strong> altyapı sağlayıcımızın kısa süreli işletim kayıtlarıdır; kendiliğinden silinir.</li>
+        <li><strong>Telefonundaki bilgiler:</strong> uygulamayı sildiğinde telefonundan da silinir.</li>
+      </ul>
+      <p>Kanunen saklamamız gereken bir bilgi varsa, yalnızca o süre boyunca ve erişimi kısıtlanmış olarak saklarız. Süre dolan veriler silinir, yok edilir ya da anonim hâle getirilir.</p>
+    </section>
+
+    <section id="silme">
+      <h2><span class="n">8</span>Hesabını silmek</h2>
+      <p>Hesabını ve buluttaki bütün verilerini istediğin zaman uygulamanın içinden silebilirsin:</p>
+      <ol class="steps">
+        <li>Uygulamada <strong>Ben</strong> sekmesini aç.</li>
+        <li>En alttaki <strong>Hesap</strong> bölümünde <strong>Hesabımı sil</strong>'e dokun.</li>
+        <li>Onayladığında hesabın, ilerlemen, ödevlerin, ses kayıtların, bildirimlerin ve kullanım kayıtların kalıcı olarak silinir. Apple ile giriş yaptıysan Apple'daki bağlantı da iptal edilir.</li>
+      </ol>
+      <div class="note warm"><p>Silme işlemi geri alınamaz. Uygulamaya erişemiyorsan kayıtlı e-posta adresinden <a href="mailto:iletisim@englishhousebyselin.com">iletisim@englishhousebyselin.com</a> adresine yazarak da hesabının silinmesini isteyebilirsin.</p></div>
+    </section>
+
+    <section id="izinler">
+      <h2><span class="n">9</span>Telefon izinleri</h2>
+      <p>Uygulama yalnızca ilgili özelliği kullandığında izin ister. İzin vermesen de uygulamanın geri kalanı çalışır; izinleri telefonunun ayarlarından istediğin zaman değiştirebilirsin.</p>
+      <div class="card-grid">
+        <div class="mini"><strong>Mikrofon</strong><span>Telaffuz alıştırmaları, konuşma ödevleri ve seviye testindeki konuşma bölümü için.</span></div>
+        <div class="mini"><strong>Konuşma tanıma</strong><span>Söylediklerini yazıya çevirip telaffuzunu değerlendirmek için.</span></div>
+        <div class="mini"><strong>Bildirimler</strong><span>Ödev, hatırlatma ve öğretmen mesajları için.</span></div>
+      </div>
+    </section>
+
+    <section id="guvenlik">
+      <h2><span class="n">10</span>Güvenlik</h2>
+      <ul>
+        <li>Uygulama ile sunucular arasındaki bütün bağlantılar şifrelidir (HTTPS/TLS).</li>
+        <li>Veritabanında her kullanıcı yalnızca kendi verisine erişebilir; öğretmenler yalnızca kendilerine bağlı öğrencilerin verilerini görebilir.</li>
+        <li>Ses kayıtları herkese kapalı bir depoda tutulur ve yalnızca kısa süreli, kişiye özel bağlantılarla açılır.</li>
+        <li>Şifreler geri çevrilemeyen biçimde saklanır.</li>
+      </ul>
+      <p>Hiçbir sistem yüzde yüz güvenli değildir. Ancak verilerini korumak için gerekli teknik ve idari tedbirleri alırız. Bir veri ihlali olursa KVKK'nın öngördüğü şekilde Kurul'a ve etkilenen kullanıcılara bildirimde bulunuruz.</p>
+    </section>
+
+    <section id="cocuklar">
+      <h2><span class="n">11</span>Çocuklar</h2>
+      <p>Primmo 13 yaşından küçük çocuklara yönelik değildir ve bilerek 13 yaş altındaki çocuklardan veri toplamayız. 18 yaşından küçüksen uygulamayı velinin ya da vasinin bilgisi ve onayıyla kullanmalısın. 13 yaşından küçük bir çocuğun hesap açtığını fark edersen bize yaz, hesabı sileriz.</p>
+    </section>
+
+    <section id="haklar">
+      <h2><span class="n">12</span>KVKK kapsamındaki hakların</h2>
+      <p>KVKK'nın 11. maddesi uyarınca bize başvurarak şu haklarını kullanabilirsin:</p>
+      <ul>
+        <li>Kişisel verilerinin işlenip işlenmediğini öğrenmek,</li>
+        <li>İşlendiyse buna ilişkin bilgi talep etmek,</li>
+        <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenmek,</li>
+        <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilmek,</li>
+        <li>Eksik veya yanlış işlendiyse düzeltilmesini istemek,</li>
+        <li>KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini istemek,</li>
+        <li>Düzeltme ve silme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini istemek,</li>
+        <li>Münhasıran otomatik sistemlerle analiz edilmesi sonucunda aleyhine bir sonuç çıkmasına itiraz etmek,</li>
+        <li>Kanuna aykırı işlenmesi sebebiyle zarara uğradıysan zararın giderilmesini talep etmek.</li>
+      </ul>
+      <h3>Nasıl başvurursun</h3>
+      <p>Başvurunu kimliğini doğrulayabileceğimiz bilgilerle birlikte; uygulamada kayıtlı e-posta adresinden <a href="mailto:iletisim@englishhousebyselin.com">iletisim@englishhousebyselin.com</a> adresine e-postayla, ya da Zübeyde Hanım Caddesi No: 254 D: 11, Zeytinburnu / İstanbul adresine yazılı olarak iletebilirsin. Başvurunu en geç 30 gün içinde ücretsiz olarak sonuçlandırırız. Cevabımızı yeterli bulmazsan Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin.</p>
+    </section>
+
+    <section id="degisiklik">
+      <h2><span class="n">13</span>Değişiklikler</h2>
+      <p>Uygulamaya yeni özellikler eklendikçe bu metni güncelleyebiliriz. Güncel metin her zaman bu sayfada yayımlanır ve en üstteki tarih değişir. Önemli bir değişiklik olursa bunu ayrıca duyururuz.</p>
+    </section>
+
+    <section id="iletisim">
+      <h2><span class="n">14</span>İletişim</h2>
+      <p>Gizlilikle ilgili her sorun için bize yazabilirsin:</p>
+      <dl class="contact">
+        <dt>E-posta</dt><dd><a href="mailto:iletisim@englishhousebyselin.com">iletisim@englishhousebyselin.com</a></dd>
+        <dt>Adres</dt><dd>Zübeyde Hanım Caddesi No: 254 D: 11, Zeytinburnu / İstanbul</dd>
+        <dt>Web</dt><dd><a href="https://englishhousebyselin.com">englishhousebyselin.com</a></dd>
+      </dl>
+    </section>
+
+  </article>
+</div>
+
+<footer>
+  © 2026 English House by Selin · <a href="https://englishhousebyselin.com">englishhousebyselin.com</a>
+</footer>
+</body>
+</html>
